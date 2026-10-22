@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.navHeader{
+    @apply flex justify-between items-center bg-gray-900 p-2 text-white;
+
+    nav {
+        @apply flex gap-2;
+
+        a {
+            @apply uppercase;
+        }
+    }
+}
+
+.heroHeader {
+    @apply h-dvh bg-red-950 text-white flex justify-center items-center bg-[url(../img/dodge.jpg)]
+    bg-linear-to-r from-cyan-500 to-blue-500 bg-center bg-no-repeat bg-cover;
+}
+
+main {
+    @apply m-9;
+}
+
+.section1 {
+    > div {
+        @apply flex gap-4;
+
+        > div {
+            @apply border border-1 border-blue-500 bg-red-50 py-4 px-3 rounded-lg;
+        }
+    }
+}
+/* npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch */
